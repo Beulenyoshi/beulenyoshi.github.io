@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,,800,900);
+html {
+  width: 100%;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ebece7), to(white));
+  background: linear-gradient(#ebece7, white);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+.title {
+  font-weight: 800;
+  color: transparent;
+  font-size: 120px;
+  /* background: url("https://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg") repeat; */
+  background: url(../img/blue_circles.jpeg) repeat;
+  /* background: url("http://www.uxqode.com/themes/dikka/app-landing/wp-content/uploads/sites/4/2014/12/app1.jpg") repeat; */
+  background-position: 40% 50%;
+  -webkit-background-clip: text;
+  position: relative;
+  text-align: center;
+  line-height: 90px;
+  letter-spacing: -8px;
+}
+
+.subtitle {
+  display: block;
+  text-align: center;
+  /* text-transform: uppercase; */
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+
+.subtitle:hover {
+  /* -webkit-transform: scale(1.05, 1.4); */
+          /* transform: scale(1.05, 1.4); */
+  text-color: #76C9E7;
+}
+
+a:link, a:visited {
+  color: #212121;
+  text-align: center;
+  text-decoration: none;
+  padding-top:10px;
+  font-size: 30px;
+  -webkit-transition: all 0.8s 0.4s ease-in-out;
+  transition: all 0.8s 0.4s ease-in-out;
+}
+
+a:hover, a:active {
+  color: #76C9E7;
+  text-align: center;
+  /* text-decoration: underline; */
+  padding-top:5px;
+  font-size: 35px;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #212121;
+  font-weight: 900;
+}
+
+.u-textCenter {
+  text-align: center;
+}
+
+.l-Wrapper {
+  width: 90%;
+  max-width: 62rem;
+}
+
+/*ul*/
+.TagCloud {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.TagCloud li {
+  display: inline;
+}
+
+.Tag {
+  color: #212121;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  padding-left: unitSize(1);
+  padding-right: unitSize(1);
+}
+
+.Tag:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1em;
+  bottom: 0;
+  margin: auto;
+  border-radius: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.8s 0.4s ease-in-out;
+  transition: all 0.8s 0.4s ease-in-out;
+}
+
+.Tag:hover:before {
+  -webkit-transform: scale(1.05, 1.4);
+          transform: scale(1.05, 1.4);
+  background-color: #76C9E7;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+footer div.social-media-links {
+	background: #FFFFFF;
+
+  overflow: hidden;
+  padding-bottom: 4px;
+  text-align: center;
+}
+footer div.social-media-links ul {
+  margin: 0;
+  padding: 0;
+}
+footer div.social-media-links li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+footer div.social-media-links a {
+  border-bottom: 0px solid rgba(0, 0, 0, 0.95);
+  border-radius: 4px;
+  /* -webkit-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0), 0 6px 8px rgba(0, 0, 0, 0), 0 24px 24px rgba(0, 0, 0, 0), 0 36px 36px rgba(0, 0, 0, 0), 0 64px 64px rgba(0, 0, 0, 0), 0 64px 128px rgba(0, 0, 0, 0), 0 120px 0 rgba(0, 0, 0, 0), 0 86px 8px 6px rgba(0, 0, 0, 0); */
+          /* box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0), 0 6px 8px rgba(0, 0, 0, 0), 0 24px 24px rgba(0, 0, 0, 0), 0 36px 36px rgba(0, 0, 0, 0), 0 64px 64px rgba(0, 0, 0, 0), 0 64px 128px rgba(0, 0, 0, 0), 0 120px 0 rgba(0, 0, 0, 0), 0 86px 8px 6px rgba(0, 0, 0, 0); */
+  display: inline-block;
+  height: 30px;
+  padding: 20px;
+  position: relative;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  width: 30px;
+}
+footer div.social-media-links a svg {
+  left: 20px;
+  position: absolute;
+  top: 20px;
+  height: 30px;
+  width: 30px;
+}
+footer div.social-media-links a svg.glow path,
+footer div.social-media-links a svg.glow circle {
+  fill: rgba(0, 0, 0, 0);
+}
+footer div.social-media-links a svg path,
+footer div.social-media-links a svg circle {
+  /* fill: #0096a1; */
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+footer div.social-media-links a:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+footer div.social-media-links a:hover svg.glow {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><f…ter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+footer div.social-media-links a:hover svg.glow path,
+footer div.social-media-links a:hover svg.glow circle {
+	fill: rgba(118, 201, 231, 0.2);
+}
+footer div.social-media-links a:hover svg path,
+footer div.social-media-links a:hover svg circle {
+	fill: #76C9E7;
+}
+
